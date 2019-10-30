@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "Page",
+  "info": {
+    "name": "page",
+    "description": "Pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "body": {
+      "required": true,
+      "type": "richtext"
+    },
+    "slug": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    }
+  }
+}

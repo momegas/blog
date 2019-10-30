@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "sqlite3",
+        "filename": ".tmp/data.db",
+        "enabled": true,
+        "host": "localhost",
+        "username": "MegaCorp",
+        "password": "1"
+      },
+      "options": {
+        "useNullAsDefault": true
+      }
+    }
+  }
+}

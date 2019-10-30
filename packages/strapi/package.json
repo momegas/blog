@@ -1,0 +1,41 @@
+{
+  "name": "strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "start": "strapi develop",
+    "start:prod": "NODE_ENV=production strapi start",
+    "build": "NODE_ENV=production strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "latest",
+    "sqlite3": "latest",
+    "strapi": "3.0.0-beta.17.2",
+    "strapi-admin": "3.0.0-beta.17.2",
+    "strapi-bookshelf": "^3.0.0-alpha.12.7.1",
+    "strapi-hook-bookshelf": "3.0.0-beta.17.2",
+    "strapi-hook-knex": "^3.0.0-beta.17.2",
+    "strapi-hook-mongoose": "^3.0.0-beta.17.4",
+    "strapi-plugin-content-manager": "3.0.0-beta.17.2",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.17.2",
+    "strapi-plugin-email": "3.0.0-beta.17.2",
+    "strapi-plugin-settings-manager": "3.0.0-beta.17.2",
+    "strapi-plugin-upload": "3.0.0-beta.17.2",
+    "strapi-plugin-users-permissions": "3.0.0-beta.17.2",
+    "strapi-utils": "3.0.0-beta.17.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "4539cb8c-e5dd-4bdf-b219-8f0e833febc0"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "posts",
+      "dominant": true
+    },
+    "timeToRead": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    }
+  }
+}
